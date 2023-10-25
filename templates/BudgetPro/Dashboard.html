@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="static/BudgetPro/css/dashboard.css" media="all">
+</head>
+<body>
+    <a href="/landingpage">
+        <img src="static/BudgetPro/img/budgetprologo.png" alt="Logo" class="logo">
+        <h1 class="m">Dashboard</h1>
+    </a>
+    
+    <a href="/userprofile">
+        <img src="static/BudgetPro/img/User.png" alt="user" class="user">
+        <p class="d">User</p>
+    </a>
+
+    <div class="rectangle1"></div>
+    <a href="/dashboard">
+        <img src="static/BudgetPro/img/Home.png" alt="home" class="home">
+
+    </a>
+
+    <img src="static/BudgetPro/img/notifications.png" alt="notification" class="notification">
+    <img src="static/BudgetPro/img/Image1.png" alt="avatar1" class="av1">
+    <p class="n">Hello {{ username }}</p>
+
+    <div class="dropdown">
+        <a href="/login" class="dropdown-toggle">
+            <img src="static/BudgetPro/img/Polygon1.png" alt="drop" class="drop" />
+        </a>
+        <div class="dropdown-content">
+            <a href="/register">Logout</a>
+            <a href="/dashboard">Dashboard</a>
+            <a href="/userprofile">Profile</a>
+            <a href="/tips">Tips</a>
+        </div>
+    </div>
+    
+    <div class="save-more">
+        <h4 style="color:#273240;">Save more</h4>
+        <p class="tips">Every penny you spend is a vote for the life you want. Spend wisely 
+       <br>  <br> Track your spending.  This is the first step to creating a budget.</p>
+        <a class="buttontips" href="tips">View Tips</a>
+    </div>
+    <img src="static/BudgetPro/img/Illustration (1).png" alt="box" class="box"/>
+    <img src="static/BudgetPro/img/Illustration.png" alt="flower" class="flower"/>
+
+    <div class="credit">
+        <h3 style="color: #5e5e5e;">Available Credit</h3>
+        <img src="static/BudgetPro/img/Line.png" alt="line" class="l1">
+        <br><br>
+        <h1 id="current-balance">0.00</h1>
+        <p>Your current balance</p>
+        <!-- <button class="add-credit" onclick="document.getElementById('popup-credit-container').style.display='block'">Add Credit</button> -->
+    </div>
+    
+    <!-- <div id="popup-credit-container">
+        <div id="close-credit-btn" onclick="closeCreditPopup()">X</div>
+        <p id="p">Add Credit</p><br>
+        <p id="p">Amount</p>
+        <input type="number" id="credit-amount" placeholder="Enter Amount">
+        <br><br>
+        <button id="submit-credit-btn" onclick="submitCredit()">Submit</button>
+    </div>
+
+<script>
+    function closeCreditPopup() {
+        document.getElementById('popup-credit-container').style.display = 'none';
+    }
+
+    function submitCredit() {
+        const creditAmount = parseFloat(document.getElementById('credit-amount').value) || 0;
+        const currentBalanceElement = document.getElementById('current-balance');
+        const currentBalance = parseFloat(currentBalanceElement.innerText) || 0;
+
+        const newBalance = currentBalance + creditAmount;
+        currentBalanceElement.innerText = newBalance.toFixed(2);
+
+        // Hide the popup
+        closeCreditPopup();
+    }
+</script> -->
+
+    
+    
+<div class="savings">
+    <h3 style="color: #5e5e5e;">Available Savings</h3>
+    <img src="static/BudgetPro/img/Line.png" alt="line" class="l1">
+    <br><br>
+    <h1 id="savingsAmount">0.00</h1>
+    <p>Your current savings</p>
+    <button class="deposit" onclick="document.getElementById('popup-container').style.display='block'">Add Saving</button>
+</div>
+
+<div id="popup-container">
+    <div id="close-btn" onclick="document.getElementById('popup-container').style.display='none'">X</div>
+    <p id="p">Input Amount</p><br>
+    <p id="p">Amount</p>
+    <input type="number" id="deposit-amount" placeholder="Enter Amount">
+    <p id="p">Note</p>
+    <input type="text" id="deposit-note" placeholder="Enter Note">
+    <label id="transaction-type-label" for="transaction-type">Transaction Type:</label>
+    <select id="transaction-type">
+        <option value="savings">Savings</option>
+        <option value="credit">Credit</option>
+    </select>
+    <button id="submit-btn" onclick="updateSavings()">Submit</button>
+</div>
+
+<script>
+    function updateSavings() {
+        // Get the entered amount
+        var depositAmount = parseFloat(document.getElementById('deposit-amount').value);
+
+        // Check the selected transaction type
+        var transactionType = document.getElementById('transaction-type').value;
+
+        // Update and display the amount based on the transaction type
+        if (transactionType === 'savings') {
+            // If savings is chosen, update savings amount
+            var currentSavings = parseFloat(document.getElementById('savingsAmount').textContent);
+            var newSavings = currentSavings + depositAmount;
+            document.getElementById('savingsAmount').textContent = newSavings.toFixed(2);
+        } else if (transactionType === 'credit') {
+            // If credit is chosen, update and display credit amount
+            var currentCredit = parseFloat(document.getElementById('current-balance').textContent);
+            var newCredit = currentCredit + depositAmount;
+            document.getElementById('current-balance').textContent = newCredit.toFixed(2);
+            
+            // Display a message or perform additional credit-related actions if needed
+            //alert('Credit amount updated: ' + newCredit.toFixed(2));
+        }
+
+        // Close the popup
+        document.getElementById('popup-container').style.display = 'none';
+    }
+</script>
+
+
+
+<!-- <div id="popup-container">
+    <div id="close-btn" onclick="document.getElementById('popup-container').style.display='none'">X</div>
+    <p id="p">Input Amount</p><br>
+    <p id="p">Amount</p>
+    <input type="number" id="deposit-amount" placeholder="Enter Amount">
+    <p id="p">Note</p>
+    <input type="text" id="deposit-note" placeholder="Enter Note">
+    <label id="transaction-type" for="transaction-type" >Transaction Type:</label>
+    <select id="transaction-type">
+        <option value="savings">Savings</option>
+        <option value="credit">Credit</option>
+    </select>
+    <button id="submit-btn" onclick="updateSavings()">Submit</button>
+</div>
+
+<script>
+    function updateSavings() {
+        // Get the entered amount
+        var depositAmount = parseFloat(document.getElementById('deposit-amount').value);
+
+        // Update the savings amount
+        var currentSavings = parseFloat(document.getElementById('savingsAmount').textContent);
+        var newSavings = currentSavings + depositAmount;
+
+        // Display the updated savings amount
+        document.getElementById('savingsAmount').textContent = newSavings.toFixed(2);
+
+        // Close the popup
+        document.getElementById('popup-container').style.display = 'none';
+    }
+</script> id="submit-btn">Submit</button>
+    </div> -->
+    <!-- <script>
+        function updateSavings() {
+            // Get the entered amount and note
+            var depositAmount = parseFloat(document.getElementById('deposit-amount').value);
+            var note = document.getElementById('deposit-note').value;
+    
+            // Check the selected transaction type
+            var transactionType = document.getElementById('transaction-type').value;
+    
+            // Update the savings amount
+            if (transactionType === 'savings') {
+                var currentSavings = parseFloat(document.getElementById('savingsAmount').textContent);
+                var newSavings = currentSavings + depositAmount;
+    
+                // Display the updated savings amount
+                document.getElementById('savingsAmount').textContent = newSavings.toFixed(2);
+            } else if (transactionType === 'credit') {
+                // Update the credit amount
+                var currentCredit = parseFloat(document.getElementById('current-balance').textContent);
+                var newCredit = currentCredit + depositAmount;
+    
+                // Display the updated credit amount
+                document.getElementById('current-balance').textContent = newCredit.toFixed(2);
+            }
+    
+            // Close the popup
+            document.getElementById('popup-container').style.display = 'none';
+        }
+    </script> -->
+    
+    
+    
+
+<div class="activity" id="recent-activity">
+    <h3 style="color: #5e5e5e;">Recent Activity</h3>
+    <img src="static/BudgetPro/img/Line.png" alt="line" class="l2">
+    <input type="search" placeholder="Search activity...">
+    <h4>Date &emsp; &emsp; &emsp; &emsp; &emsp; Time &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; Amount &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; Note</h4>
+</div>
+
+<style>
+    .activity-entry {
+        white-space: pre-wrap;
+    }
+</style>
+
+<script>
+    function submitForm() {
+        const amount = document.getElementById('deposit-amount').value;
+        const note = document.getElementById('deposit-note').value;
+
+        // Create a new entry for recent activity
+        const activityEntry = document.createElement('div');
+        activityEntry.classList.add('activity-entry');
+
+        // Format the date and time with spaces
+        const formattedDate = new Date().toLocaleDateString();
+        const formattedTime = new Date().toLocaleTimeString();
+
+        // Create a text node with formatted content
+        const activityText = document.createTextNode(`${formattedDate}\t\t${formattedTime}\t\t\t\t${amount}\t\t\t\t\t\t\t${note}`);
+
+        // Append the text node to the activity entry
+        activityEntry.appendChild(activityText);
+
+        // Append the new entry to the recent activity
+        const recentActivity = document.getElementById('recent-activity');
+        recentActivity.appendChild(activityEntry);
+
+        // Hide the popup
+        document.getElementById('popup-container').style.display = 'none';
+    }
+
+    // Add an event listener to the "Submit" button
+    document.getElementById('submit-btn').addEventListener('click', submitForm);
+
+    // Search functionality
+    document.querySelector('input[type="search"]').addEventListener('input', function () {
+        const searchTerm = this.value.toLowerCase();
+        const activityEntries = document.querySelectorAll('.activity-entry');
+
+        activityEntries.forEach(function (entry) {
+            const entryText = entry.textContent.toLowerCase();
+            entry.style.display = entryText.includes(searchTerm) ? 'block' : 'none';
+        });
+    });
+</script>
+
+
+<h1 style="font-family: Montserrat; position: absolute; left: 820px; top: 80px;">Goal</h1>
+<div class="expenses">
+    <img src="static/BudgetPro/img/Goal.png" alt="Goal Image">
+    <p style="color: #5e5e5e; font-size: 15px; position: absolute; left: 75px; top: 25px;">Set an earnings goal.</p>
+    <h4 id="open-popup">Create Goal</h4>
+    <img src="static/BudgetPro/img/Line.png" alt="line" class="l3">
+    <h4 style="color: blue; text-align: right; position: absolute; left: 270px; top: 116px;" id="edit-popup-overlay">Edit</h4>
+    <br>
+    <p>Earn my first PHP 0</p>
+    <br>
+    <h3>0%</h3>
+    <div class="progress-bar-container">
+        <div class="progress-bar" style="width: 40%;"></div>
+    </div>
+    <br>
+    <p>₱0 of ₱0 earned • 7 days left</p>
+</div>
+
+
+
+<div id="popup-overlay">
+    <div class="popup">
+        <div id="close-popup" onclick="document.getElementById('popup-overlay').style.display='none'">X</div>
+
+        <h3 style="text-align: center;">Create Goal</h3>
+        <input type="number" id="goal-amount" placeholder="Earn my first PHP">
+        <h4 style="text-align: left;">Target amount</h4>
+        <div class="progress-bar-container">
+            <div class="progress-bar" style="width: 10%;"></div>
+            <p class="progress-label">10%</p>
+        </div>
+        <p style="text-align: left;">Try starting with a small target amount until you have a good sense 
+            of how much you’ll typically earn each period.</p>
+        <h4 style="text-align: left;">Time period</h4>
+        <div>
+            <button onclick="setTimePeriod(7)" style="display: inline-block; background-color: #ADDDDE; color: #000235;">1 week</button>
+            <button onclick="setTimePeriod(21)" style="display: inline-block; background-color: #ADDDDE; color: #000235;">3 weeks</button>
+            <button onclick="setTimePeriod(30)" style="display: inline-block; background-color: #ADDDDE; color: #000235;">1 month</button>
+        </div>
+        <input type="date" id="goal-date">
+        <h4 style="text-align: left;">Progress update</h4>
+        <p style="text-align: left;">You’ll get updates on progress at the halfway point and end of your goal.</p>
+        
+        <button id="submit-goal">Start Goal</button>
+
+    </div>
+</div>
+
+<script>
+    function setTimePeriod(days) {
+        // You can use this function to handle the selected time period
+        // For now, let's just log the selected days to the console
+        console.log(`Selected time period: ${days} days`);
+    }
+</script>
+
+<div class="overlay" id="overlay">
+    <div class="popup">
+        <div id="close-popup" onclick="closePopup()">X</div>
+        <h2>Edit Your Goal</h2>
+        <input type="number" id="goal-amount" placeholder="Earn my first PHP">
+        <button style="width: 400px; height: 50px; background-color: #ADDDDE; color: #000235;" onclick="updateGoal()">Update Goal</button>
+        <button style="width: 400px; height: 50px; background-color: #ADDDDE; color: #000235;" onclick="deleteGoal()">Delete Goal</button>
+    </div>
+</div>
+
+<script>
+    // JavaScript to show and hide the popup
+    document.getElementById('edit-popup-overlay').addEventListener('click', showPopup);
+
+    document.getElementById('close-popup').addEventListener('click', closePopup);
+
+    function showPopup() {
+        document.getElementById('overlay').style.display = 'flex';
+    }
+
+    function closePopup() {
+        document.getElementById('overlay').style.display = 'none';
+    }
+
+    function updateGoal() {
+        // Get the value from the input
+        var newGoalAmount = document.getElementById('goal-amount').value;
+
+        // Implement your logic to update the goal with the new value
+        console.log('Update Goal:', newGoalAmount);
+
+        // Close the popup
+        closePopup();
+    }
+
+    function deleteGoal() {
+        // Implement your logic to delete the goal
+        console.log('Delete Goal');
+
+        // Close the popup
+        closePopup();
+    }
+</script>
+
+
+<script>
+    // Function to show the popup overlay
+    function showPopupOverlay() {
+        document.getElementById('popup-overlay').style.display = 'flex';
+    }
+
+    // Function to hide the popup overlay
+    function hidePopupOverlay() {
+        document.getElementById('popup-overlay').style.display = 'none';
+    }
+
+    // Add a click event listener to the "Create Goal" button
+    document.getElementById('open-popup').addEventListener('click', showPopupOverlay);
+
+    // Add a click event listener to the "Submit Goal" button
+    document.getElementById('submit-goal').addEventListener('click', function () {
+        // Handle form submission logic here
+
+        // Hide the popup overlay after submitting the goal
+        hidePopupOverlay();
+    });
+
+</script>
+
+<!-- 
+<script>
+    // Function to show the popup overlay
+    function showPopupOverlay() {
+        document.getElementById('popup-overlay').style.display = 'flex';
+    }
+
+    // Function to hide the popup overlay
+    function hidePopupOverlay() {
+        document.getElementById('popup-overlay').style.display = 'none';
+    }
+
+    // Function to show the edit popup overlay
+    function showEditPopupOverlay() {
+        document.getElementById('edit-popup-overlay').style.display = 'flex';
+    }
+
+    // Function to hide the edit popup overlay
+    function hideEditPopupOverlay() {
+        document.getElementById('edit-popup-overlay').style.display = 'none';
+    }
+
+    // Add a click event listener to the "Create Goal" button
+    document.getElementById('open-popup').addEventListener('click', showPopupOverlay);
+
+    // Add a click event listener to the "Edit" button
+    document.getElementById('open-popup').addEventListener('click', showEditPopupOverlay);
+
+    // Add a click event listener to the "Close" button in the edit popup
+    document.getElementById('close-edit-popup').addEventListener('click', hideEditPopupOverlay);
+
+    // Add a click event listener to the "Submit Goal" button
+    document.getElementById('submit-goal').addEventListener('click', function () {
+        // Handle form submission logic here
+
+        // Hide the popup overlay after submitting the goal
+        hidePopupOverlay();
+    });
+
+    // Add a click event listener to the "Submit Edit" button
+    document.getElementById('submit-edit-goal').addEventListener('click', function () {
+        // Handle edit form submission logic here
+
+        // Hide the edit popup overlay after submitting the edit
+        hideEditPopupOverlay();
+    });
+</script> -->
+
+<!-- <script>
+    // Function to show the popup overlay
+    function showPopupOverlay() {
+        document.getElementById('main-popup').style.display = 'flex';
+        document.getElementById('edit-popup').style.display = 'none'; // Hide edit popup
+    }
+
+    // Function to hide the popup overlay
+    function hidePopupOverlay() {
+        document.getElementById('main-popup').style.display = 'none';
+    }
+
+    // Function to show the edit popup overlay
+    function showEditPopupOverlay() {
+        document.getElementById('edit-popup').style.display = 'flex';
+        document.getElementById('main-popup').style.display = 'none'; // Hide main popup
+    }
+
+    // Function to hide the edit popup overlay
+    function hideEditPopupOverlay() {
+        document.getElementById('edit-popup').style.display = 'none';
+    }
+
+    // Add a click event listener to the "Create Goal" button
+    document.getElementById('open-popup').addEventListener('click', showPopupOverlay);
+
+    // Add a click event listener to the "Edit" button
+    document.getElementById('open-edit-popup').addEventListener('click', showEditPopupOverlay);
+
+    // Add a click event listener to the "Close" button in the edit popup
+    document.getElementById('close-edit-popup').addEventListener('click', hideEditPopupOverlay);
+
+    // Add a click event listener to the "Submit Goal" button
+    document.getElementById('submit-goal').addEventListener('click', function () {
+        // Handle form submission logic here
+
+        // Hide the popup overlay after submitting the goal
+        hidePopupOverlay();
+    });
+
+    // Add a click event listener to the "Submit Edit" button
+    document.getElementById('submit-edit-goal').addEventListener('click', function () {
+        // Handle edit form submission logic here
+
+        // Hide the edit popup overlay after submitting the edit
+        hideEditPopupOverlay();
+    });
+</script> -->
+</body>
+</html>

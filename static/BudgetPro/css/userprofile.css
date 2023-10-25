@@ -1,0 +1,288 @@
+.logo{
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    left: 65px;
+    top: 40px;
+}
+
+.rectangle1 {
+    width: 15px;
+    height: 40px;
+    position: absolute;
+    left: 10px;
+    top: 140px;
+    background: #000235;
+}
+
+.user{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 65px;
+    top: 140px;
+    fill: rgba(0, 2, 53, 0.75);
+    filter: drop-shadow(0px 0px 4px #000);
+}
+
+.home{
+    width: 45px;
+    height: 40px;
+    position: absolute;
+    left: 63px;
+    top: 230px;
+}
+
+
+.m{
+    position: absolute;
+    left: 160px;
+    top: 8px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.w{
+    position: absolute;
+    left: 160px;
+    top: 50px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.notification{
+    display: flex;
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    left: 900px;
+    top: 40px;
+    color: rgba(168, 164, 164, 0.70);
+}
+
+.av1{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 950px;
+    top: 30px;
+    border-radius: 400px;
+}
+
+.av2{
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    left: 100px;
+    top: 15px;
+    border-radius: 10px;
+}
+
+.drop {
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    left: 1140px;
+    top: 40px;
+    fill: #000235;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.dropdown-toggle {
+    text-decoration: none;
+    color: #333; 
+    padding: 10px;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #fff; 
+    min-width: 150px; 
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); 
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #f0f0f0; 
+    color: #000; 
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    left: 1140px;
+    top: 40px;
+    font-family: Montserrat;
+    font-size: 30px;
+}
+.d{
+    width: 133px;
+    height: 24px;
+    position: absolute;
+    left: 30px;
+    top: 260px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.n{
+    width: 145px;
+    height: 30px;
+    position: absolute;
+    left: 1015px;
+    top: 23px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.rectangle2{
+    width: 1040px;
+    height: 550px;
+    position: absolute;
+    left: 160px;
+    top: 95px;
+    border-radius: 10px;
+    background: rgba(217, 217, 217, 0.50);
+}
+
+.rectangle3{
+    width: 500px;
+    height: 520px;
+    position: absolute;
+    left: 275px;
+    top: 15px;
+    border-radius: 10px;
+    background: #FFF;
+}
+
+/* .rectangle4{
+    width: 100px;
+    height: 38px;
+    position: absolute;
+    left: 210px;
+    top: 460px;
+    border-radius: 50px;
+    background: #ADDDDE;
+} */
+
+.mp{
+    position: absolute;
+    left: 100px;
+    top: 270px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.date{
+    position: absolute;
+    left: 230px;
+    top: 276px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.yn{
+    position: absolute;
+    left: 100px;
+    top: 330px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+    /* text-decoration: underline; */
+}
+
+.l1{
+    width: 234.019px;
+    height: 1px;
+    position: absolute;
+    left: 100px;
+    top: 360px;
+    background: rgba(0, 0, 0, 0.30);
+}
+
+.gmail{
+    position: absolute;
+    left: 100px;
+    top: 400px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+    /* text-decoration: underline; */
+}
+
+.l2{
+    width: 234.019px;
+    height: 1px;
+    position: absolute;
+    left: 100px;
+    top: 430px;
+    background: rgba(0, 0, 0, 0.30);
+}
+
+.save{
+    width: 100px;
+    height: 38px;
+    position: absolute;
+    left: 210px;
+    top: 460px;
+    border-radius: 50px;
+    background: #ADDDDE;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+

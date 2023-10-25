@@ -1,0 +1,84 @@
+    <!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="static/BudgetPro/css/userprofile.css" media="all">
+</head>
+
+<body>
+    <a href="/landingpage">
+        <img src="static/BudgetPro/img/budgetprologo.png" alt="Logo" class="logo">
+        <h1 class="m">User Profile</h1>
+    </a>
+    <div class="rectangle1"></div>
+    <a href="/userprofile">
+        <img src="static/BudgetPro/img/User.png" alt="user" class="user">
+    </a>
+    <a href="/dashboard">
+        <img src="static/BudgetPro/img/Home.png" alt="home" class="home">
+        <p class="d">Dashboard</p>
+    </a>
+
+    <img src="static/BudgetPro/img/notifications.png" alt="notification" class="notification">
+    <img src="static/BudgetPro/img/Image1.png" alt="avatar1" class="av1">
+    <p class="n">Hello {{ username }}</p>
+     <!--    <a href="/login">
+      <img src="static/BudgetPro/img/Polygon1.png" alt="drop" class="drop" />
+    </a>     -->
+
+    <div class="dropdown">
+        <a href="/login" class="dropdown-toggle">
+            <img src="static/BudgetPro/img/Polygon1.png" alt="drop" class="drop" />
+        </a>
+        <div class="dropdown-content"> <!-- Remove the dot (.) before dropdown-content -->
+            <!-- Dropdown content goes here -->
+            <a href="login">Logout</a>
+            <a href="dashboard">Dashboard</a>
+            <a href="userprofile">Profile</a>
+            <a href="/tips">Tips</a>
+        </div>
+    </div>
+
+    <div class="rectangle2">
+        <div class="rectangle3">
+            <img src="static/BudgetPro/img/Image2.png" alt="avatar2" class="av2">
+            <p class="mp">My Profile</p>
+            <p class="date" id="last-login">Last Login: <span id="last-login-time">{{ request.user.last_login }}</span></p>
+
+            <!-- JavaScript for updating Last Login -->
+<script>
+    function updateLastLogin() {
+        const lastLoginElement = document.getElementById('last-login-time');
+        const lastLoginTimestamp = Date.parse(lastLoginElement.textContent); // Parse the last login timestamp
+
+        if (!isNaN(lastLoginTimestamp)) {
+            // If parsing was successful, update the displayed time with the parsed time
+            const lastLoginDate = new Date(lastLoginTimestamp);
+            const formattedDate = lastLoginDate.toLocaleString(); // Format the date as needed
+            lastLoginElement.textContent = formattedDate;
+        }
+    }
+
+    // Update the date immediately and every 60 seconds (adjust as needed)
+    updateLastLogin();
+    setInterval(updateLastLogin, 60000); // 60,000 milliseconds = 60 seconds
+</script>
+<!-- End of JavaScript for updating Last Login -->
+
+
+            <form action="/userprofile" method="post">
+            {% csrf_token %}            
+                <input type="text" id="name" name="name" placeholder="Your Name" class="yn">
+                <img src="static/BudgetPro/img/Line.png" alt="line" class="l1">
+                <input type="email" id="email" name="email" placeholder="Email" class="gmail">
+                <img src="static/BudgetPro/img/Line.png" alt="line" class="l2">
+                <button type="submit" class="save">Save</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

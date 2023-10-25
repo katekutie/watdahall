@@ -1,0 +1,642 @@
+.tips{
+    font-size: 13px;
+    text-align: left;
+}
+
+.rectangle1 {
+    width: 15px;
+    height: 40px;
+    position: absolute;
+    left: 10px;
+    top: 230px;
+    background: #000235;
+}
+
+.save-more{
+    width: 640px;
+    height: 130px;
+    position: absolute;
+    left: 160px;
+    top: 95px;
+    border-radius: 10px;
+    background: rgba(217, 217, 217, 0.50);
+    font-family: Montserrat;
+    text-align: center;
+}
+
+/* h4{
+    text-align-center ;
+} */
+
+
+
+h3{
+    text-align: left;
+    color: #5e5e5e;
+}
+
+.tips{
+    padding-left: 1em;
+}
+
+.savings{
+    width: 285px;
+    height: 300px;
+    position: absolute;
+    left: 490px;
+    top: 250px;
+    border-radius: 10px;
+    background: rgba(217, 217, 217, 0.50);
+    font-family: Montserrat;
+    padding-left: 25px;
+}
+
+#popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #777;
+    font-family: Montserrat, sans-serif;
+}
+
+#deposit-amount {
+    margin-top: 10px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+
+#deposit-note {
+    margin-top: 10px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+
+#submit-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ADDDDE;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: Montserrat, sans-serif;
+}
+
+#p{
+    font-family: Montserrat, sans-serif;
+    text-align: left;
+}
+
+.deposit{
+  background-color: #ADDDDE;
+  font-family: Montserrat, sans-serif;
+  border-radius: 25px;
+  display: block;
+  width: 100px;
+  height: 40px;
+}
+
+.add-credit {
+  background-color: #ADDDDE;
+  font-family: Montserrat, sans-serif;
+  border-radius: 25px;
+  display: block;
+  width: 100px;
+  height: 40px;
+}
+
+
+
+.buttontips {
+    background-color: #132C3A;
+    font-family: Montserrat, sans-serif;
+    border-radius: 25px;
+    display: block;
+    width: 150px;
+    height: 30px;
+    color: white;
+    position: absolute;
+    left: 465px;
+    top: 60px;
+    text-decoration: none;
+    line-height: 20px; 
+}
+
+
+ .activity{
+    width: 990px;
+    height: auto;
+    position: absolute;
+    left: 160px;
+    top: 570px;
+    border-radius: 10px;
+    background: rgba(217, 217, 217, 0.50);
+    font-family: Montserrat;
+    text-align: left;
+    padding-left: 25px;
+    overflow-y: auto; /* Added to provide a scrollbar if needed */
+} 
+
+
+
+
+input[type="search"] {
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: absolute;
+  left: 750px;
+  top: 20px;
+}
+
+.m{
+    position: absolute;
+    left: 160px;
+    top: 8px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.user{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 65px;
+    top: 140px;
+    fill: rgba(0, 2, 53, 0.75);
+    filter: drop-shadow(0px 0px 4px #000);
+}
+
+.home{
+    width: 45px;
+    height: 40px;
+    position: absolute;
+    left: 63px;
+    top: 230px;
+}
+
+.notification{
+    display: flex;
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    left: 900px;
+    top: 40px;
+    color: rgba(168, 164, 164, 0.70);
+}
+
+.av1{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 950px;
+    top: 30px;
+    border-radius: 400px;
+}
+
+.drop {
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    left: 1140px;
+    top: 40px;
+    fill: #000235;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.dropdown-toggle {
+    text-decoration: none;
+    color: #333; 
+    padding: 10px;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #fff; 
+    min-width: 150px; 
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); 
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #f0f0f0; 
+    color: #000; 
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    left: 1140px;
+    top: 40px;
+    font-family: Montserrat;
+    font-size: 30px;
+}
+
+.n{
+    width: 165px;
+    height: 30px;
+    position: absolute;
+    left: 1010px;
+    top: 23px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.logo{
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    left: 65px;
+    top: 40px;
+}
+
+.d{
+    width: 133px;
+    height: 24px;
+    position: absolute;
+    left: 60px;
+    top: 165px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.l1{
+    width: 234.019px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.30);
+}
+
+.l2{
+    width: 950px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.30);
+}
+
+.l3{
+    width: 315px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.30);
+}
+
+.box{
+    width: 84.15px;
+    height: 72.434px;
+    position: absolute;
+    left: 220px;
+    margin-top: 55px;
+}
+
+.flower{
+    width: 52.254px;
+    height: 90.001px;
+    position: absolute;
+    left: 670px;
+    margin-top: 29px;
+}
+
+
+/* Your existing CSS */
+
+/* Add Credit Popup */
+#popup-credit-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px; /* Adjust the width as needed */
+}
+
+#popup-credit-container p {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+#close-credit-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #777;
+    font-family: Montserrat, sans-serif;
+}
+
+#credit-amount {
+    margin-top: 10px;
+    padding: 8px;
+    width: calc(100% - 16px); /* Adjust the width considering padding */
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#credit-amount::placeholder {
+    color: #ccc; /* Placeholder text color */
+}
+
+#submit-credit-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ADDDDE;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: Montserrat, sans-serif;
+    border-radius: 5px;
+}
+
+.credit{
+    width: 285px;
+    height: 300px;
+    position: absolute;
+    left: 160px;
+    top: 250px;
+    border-radius: 10px;
+    background: rgba(217, 217, 217, 0.50);
+    font-family: Montserrat;
+    padding-left: 25px;
+}
+
+#transaction-type{
+    font-family: Montserrat, sans-serif;
+    text-align: left;
+}
+
+.expenses {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 820px;
+    top: 150px;
+    border-radius: 10px;
+    background: rgba(217, 217, 217, 0.50);
+    font-family: Montserrat;
+    display: inline-block;
+    /* flex-direction: column;
+    align-items: center; */
+    padding: 25px;
+    
+    
+}
+
+.expenses img {
+    margin-bottom: 10px;
+}
+
+#open-popup {
+    background: none;
+    border: none;
+    color: blue;
+    cursor: pointer;
+    margin-bottom: 10px; 
+    position: absolute;
+    left: 238px;
+    top: 20px;
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 15px;
+    background-color: #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px 0;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #ADDDDE;
+    border-radius: 8px;
+}
+
+.progress-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    font-weight: bold;
+}
+.expenses h3 {
+    margin: 10px 0;
+}
+
+.expenses p {
+    color: #5e5e5e;
+    margin-bottom: 5px;
+}
+#popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    font-family: Montserrat;
+    overflow-y: auto;
+}
+
+#submit-goal {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+    background-color: #ADDDDE;
+    color: #000235;
+    border: none;
+    cursor: pointer;
+    font-family: Montserrat, sans-serif;
+    display: block;
+}
+
+
+.popup {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup label, .popup input, .popup button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.popup input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.popup button {
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.popup button:hover {
+    background: #45a049;
+}
+
+/* #close-popup {
+    background: #f44336;
+    margin-right: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #777;
+    font-family: Montserrat, sans-serif;
+} */
+
+/* Styles for the main popup overlay */
+/* #popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    justify-content: center;
+    align-items: center;
+} */
+
+.popup {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+/* Styles for the close button */
+#close-popup, #close-edit-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* Styles for the progress bar container (adjust as needed) */
+/* .progress-bar-container {
+    width: 100%;
+    height: 20px;
+    background: #eee;
+    border-radius: 4px;
+    margin: 10px 0;
+    overflow: hidden;
+} */
+
+/* .progress-bar {
+    height: 100%;
+    background: #4caf50; 
+} */
+
+/* #edit-popup-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+  } */
+
+
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+}
+
+.popup {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#close-popup {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+}

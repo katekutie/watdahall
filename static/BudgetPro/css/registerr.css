@@ -1,0 +1,416 @@
+.content-container {
+    max-height: 100vh; 
+    overflow-y: auto; 
+    overflow-x: auto;
+    padding: 20px;
+    margin: 25px;
+}
+
+body {
+    /* margin: 0;
+    padding: 20px; */
+    background-color: #fff;
+    color: white;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    
+}
+
+.logo {
+    width: 56.783px;
+    height: 49.04px;
+    flex-shrink: 0;
+    vertical-align: middle;
+    margin-left: 30px; 
+    margin-top: 10px;
+}
+
+.logo-text {
+    display: inline-block;
+    vertical-align: middle; 
+    margin-left: 10px; 
+    margin-bottom: 10px;
+    font-family: Outfit;
+    color: #000235;
+    font-size: 20px;
+    font-weight: 700; 
+
+}
+
+.a{
+    width: 150px; 
+    height: 35px;
+    border-radius: 6px;
+    background: #87CFD0;
+    position: absolute; 
+    left: 1020px; 
+    top: 20px; 
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+.a a {
+text-decoration: none; /* Remove underline */
+color: #FFF; /* Set the link color */
+font-size: 20px;
+}
+
+.line {
+    width: 5px;
+    height: 55px; 
+    flex-shrink: 0;
+    stroke-width: 1px;
+    stroke: #000235;
+    left: 1230px; 
+    top: 12px;
+    position: absolute;
+}
+
+.settingsgear{
+    width: 29px;
+    height: 28.358px;
+    flex-shrink: 0;
+    left: 1250px; 
+    top: 25px;
+    position: absolute; 
+}
+
+div{
+    border-radius: 10px;
+    border: 1.5px solid rgba(0, 2, 53, 0.50);
+    width: 600px;
+    height: 600px;
+    flex-shrink: 0;
+    padding: 50px;
+}
+
+h2{
+    width: 389px;
+    height: 34px;
+    color: #080D3D;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    /* top: 90px;
+    left: 160px;
+    position: absolute; */
+    
+}
+
+.a{
+    width: 150px; 
+    height: 40px;
+    border-radius: 6px;
+    background: #87CFD0;
+    position: absolute; 
+    left: 1010px; 
+    top: 18px; 
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+
+.a a {
+text-decoration: none; /* Remove underline */
+color: #FFF; /* Set the link color */
+}
+
+button {
+    width: 81%;
+    height: 60px;
+    background: #000235;
+    color: #FAFAFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 12px;
+    background: #000235;
+    margin-bottom: 10px; 
+    margin-left: 50px;
+}
+
+.form {
+    width: 80%;
+    height: 60px;
+    border-radius: 12px 12px 0px 0px;
+    background: rgba(217, 217, 217, 0.60);
+    color: #A8A4A4;
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px; /* 180% */
+    margin-bottom: 10px; 
+    margin-left: 50px;
+}
+/* .email{ 
+    width: 575px;
+    height: 68px;
+    flex-shrink: 0;
+    border-radius: 12px 12px 0px 0px;
+    background: rgba(217, 217, 217, 0.60);
+    color: #A8A4A4;
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px; 
+}
+
+.name{ 
+    width: 575px;
+    height: 68px;
+    flex-shrink: 0;
+    border-radius: 12px 12px 0px 0px;
+    background: rgba(217, 217, 217, 0.60);
+    color: #A8A4A4;
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px; 
+}*/
+.password{
+    width: 35%;
+    height: 60px;
+    border-radius: 12px 12px 0px 0px;
+    background: rgba(217, 217, 217, 0.60);
+    color: #A8A4A4;
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    margin-bottom: 10px; 
+    margin-left: 50px;
+} 
+
+.createpassword {
+    width: 30%; 
+    height: 60px;
+    border-radius: 12px 12px 0px 0px;
+    background: rgba(217, 217, 217, 0.60);
+    color: #A8A4A4;
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px; /* 180% */
+    position: absolute;
+    top: 431px; 
+    left: 53%; 
+    margin-bottom: 10px;
+}
+
+.p{
+    color: #0C0B0B;
+    font-family: Montserrat;
+    font-size: 23px;
+    font-style: normal;
+    top: 475px;
+    position: absolute;
+    left: 370px;
+}
+
+footer {
+    /* background-color: #87CFD0; 
+    color: #fff; 
+    padding: 220px;
+    text-align: end;
+    position: relative;
+    width: auto;  */
+
+    width: 1875px; 
+    height: 418px;
+    padding: 10px; 
+    /* left: 0px; 
+    top: 0px;  */
+    position: absolute; 
+    background-color: #87CFD0;  
+    backdrop-filter: blur(4px);
+}
+
+footer p{
+    text-align: center; 
+    font-size: 36px; 
+    font-weight: 500;
+    font-family: Montserrat;
+    max-width: fit-content;
+    max-height: fit-content;
+    word-wrap: break-word;
+    line-height: 36px; 
+}
+
+.linkedin-icon {
+    width: 25px; 
+    height: 20.35px; 
+    left: 872px; 
+    top: 169px; 
+    position: absolute;
+}
+
+.facebook-icon {
+    width: 25px; 
+    height: 20.35px; 
+    left: 930px; 
+    top: 169px; 
+    position: absolute;
+}
+
+.instagram-icon {
+    width: 25px; 
+    height: 20.35px; 
+    left: 988px; 
+    top: 169px; 
+    position: absolute;
+}
+
+.twitter-icon {
+    width: 25px; 
+    height: 20.35px; 
+    left: 1046px; 
+    top: 169px; 
+    position: absolute;
+}
+
+.footer-heading {
+    width: 177px; 
+    height: 45.11px; 
+    left: 410px; 
+    top: 60.14px; 
+    position: absolute; 
+    color: white; 
+    font-size: 36px; 
+    font-family: Outfit; 
+    font-weight: 700; 
+    word-wrap: break-word;
+}
+
+.logofooter{
+    width: 56.783px;
+    height: 49.04px;
+    top: 80px;
+    left: 350px;
+    position: absolute;
+}
+
+.footer-description {
+    width: 509px; 
+    height: 284.68px; 
+    left: 226px; 
+    top: 133.32px; 
+    position: absolute; 
+    color: rgba(255, 251.18, 251.18, 0.87); 
+    font-size: 24px; 
+    font-family: Montserrat; 
+    font-weight: 500; 
+    line-height: 36px; 
+    word-wrap: break-word;
+}
+
+.footer-copyright {
+    width: 250px; 
+    height: 56.13px; 
+    left: 370px; 
+    top: 250px;
+    position: absolute;
+    color: rgba(255, 251, 251, 0.87);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px; 
+}
+
+.remember{
+    width: 30px;
+    height: 31px;
+    flex-shrink: 0;
+    border-radius: 0.5px;
+    border: 3px solid #D9D9D9;
+    vertical-align: middle;
+}
+
+.remember-label{
+    width: 162.695px;
+    height: 37.466px;
+    flex-shrink: 0;
+    color: #0C0B0B;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px; /* 156.522% */
+}
+
+.w{
+    /* width: 600px;
+    height: 100px;
+    left: 700px; 
+    top: 50px; 
+    position: absolute; 
+    color: #080D3D; 
+    font-size: 50px; 
+    font-family: Outfit; 
+    font-weight: 600; 
+    text-transform: capitalize; 
+    line-height: 60px; 
+    word-wrap: break-word; */
+    width: 600px;
+    height: 100px;
+    left: 700px; 
+    top: 30px; 
+    position: absolute; 
+    text-align: center; 
+    color: #080D3D;
+    font-size: 60px; 
+    font-family: Outfit; 
+    font-weight: 600; 
+    text-transform: capitalize; 
+    line-height: 60px; 
+    word-wrap: break-word;
+}
+
+.ww{
+    width: 472px; 
+    height: 284px; 
+    left: 769px; 
+    top: 200px;
+    position: absolute; 
+    color: #080D3D; 
+    font-size: 20px; 
+    font-family: Montserrat; 
+    font-weight: 500; 
+    line-height: 36px; 
+    word-wrap: break-word;
+}
+
+.pic2{
+    display: flex;
+    width: 403px;
+    height: 462px;
+    left: 770px; 
+    top: 250px;
+    position: absolute; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}

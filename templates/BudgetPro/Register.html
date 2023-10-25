@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="static/BudgetPro/css/registerr.css" media="all">
+</head>
+
+<body>
+    <img src="static/BudgetPro/img/budgetprologo.png" alt="Logo" class="logo">
+    <p class="logo-text">BudgetPro</p>
+    <!-- <button type="submit"> Register </button> -->
+    <button type="submit" class="a"> <a href="/login">LogIn</a> </button>
+    <img src="static/BudgetPro/img/Line.png" alt="Line" class="line">
+    <img src="static/BudgetPro/img/web-settings.png" alt="Settings" class="settingsgear">
+    <br><br>
+
+     <div class="content-container">
+        <br>
+        <h2>Create New Account</h2>
+        <br>
+
+        <form action="/register" method="post">
+        {% csrf_token %}
+            <!-- <label for="email">Email:</label> -->
+            <input class="form" type="text" id="username" name="username" placeholder="Name" required><br><br>
+            <!-- <input class="name" type="text" id="fname" name="fname" placeholder="First Name" required><br><br>
+            <input class="name" type="text" id="lname" name="lname" placeholder="Last Name" required><br><br>-->
+            <input class="form" type="text" id="email" name="email" placeholder="Email" required><br><br> 
+
+            <!-- <label for="password">Password:</label> -->
+            <input class="password" type="password" id="password1" name="password1" placeholder="Password" required><br><br>
+
+            <input class="createpassword" type="password" id="password2" name="password2" placeholder="Confirm Password" required><br><br>
+           
+            <button type="submit" class="submit-button">CONTINUE</button><br><br>
+
+            <!-- <label class="remember-label" for="checkbox">
+            <input class="remember" type="checkbox" id="checkbox" name="Remember" value="yes"> Remember</label>
+            
+            <p class="p">Forgot Password</p> -->
+
+        </form>
+    </div>
+
+<p class="w"> Register to manage your budget</p>
+<p class="ww"> A platform for your personalized financial tool </p>
+<img src="static/BudgetPro/img/pic2.png" alt="Study" class="pic2">
+
+</body>
+
+<br><br><br><br>
+<footer>
+    <img src="static/BudgetPro/img/linkedin.png" alt="LinkedIn" class="linkedin-icon">
+    <img src="static/BudgetPro/img/facebook-app-symbol.png" alt="Facebook" class="facebook-icon">
+    <img src="static/BudgetPro/img/instagram.png" alt="Instagram" class="instagram-icon">
+    <img src="static/BudgetPro/img/twitter.png" alt="Twitter" class="twitter-icon">
+
+    <p class="footer-heading">BudgetPro</p>
+    <img src="static/BudgetPro/img/Budgetprologo.png" alt="Logo" class="logofooter">
+    <p class="footer-description">For anyone to manage their budget, track expenses, and plan investments.</p>
+    <p class="footer-copyright">&copy; CSIT327 - G3 2023</p>
+</footer>  
+
+</body>
+</html>
